@@ -7,4 +7,4 @@
 
 
 ## 2️⃣ Document Processing Workflow (Prepare for Chatbot)
-![Workflow](d12.png)
+![Workflow](d2.png)
