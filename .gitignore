@@ -1,0 +1,17 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+.env
+
+# Ignore database and index
+chat_assistant/data/*.db
+chat_assistant/data/*.index
+
+# Ignore uploads
+chat_assistant/data/files/
+
+# Ignore temporary files
+temp/

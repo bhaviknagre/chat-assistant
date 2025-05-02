@@ -1,0 +1,28 @@
+2025-05-02 18:58:35,442 - chat_assistant - INFO - [PDF Extraction] Successfully extracted text from chat_assistant/data/files\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-05-02 19:04:32,327 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-05-02 19:04:32,353 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-02 19:04:32,360 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-02 19:04:45,593 - chat_assistant - INFO - [PDF Extraction] Successfully extracted text from chat_assistant/data/files\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-05-02 19:04:45,594 - chat_assistant - INFO - [Text Chunking] Splitting text into chunks...
+2025-05-02 19:04:45,595 - chat_assistant - INFO - [Text Chunking] Split into 2 chunks.
+2025-05-02 19:04:45,606 - chat_assistant - INFO - [FAISS] Created new FAISS index
+2025-05-02 19:04:45,606 - chat_assistant - ERROR - [Embedding] Failed to embed text chunk: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-02 19:04:45,606 - chat_assistant - ERROR - [Embedding] Failed to embed text chunk: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
