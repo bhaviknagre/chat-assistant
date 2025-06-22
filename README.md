@@ -1,17 +1,3 @@
-# chat-assistant
-
-
-## 1️⃣ Document Search Workflow
-![Workflow](d1.png)
-
-
-
-## 2️⃣ Document Processing Workflow (Prepare for Chatbot)
-![Workflow](d2.png)
-
-
-
-
 
 ## Detailed Description of Core Components
 
@@ -34,5 +20,3 @@ Handles the storage of documents, metadata, embeddings, and chunked text in the 
 **Pipeline (pipeline.py) :**
 This is the orchestrator, managing the entire flow of the application from document extraction to embedding and storage. It ensures that the process is executed in a streamlined manner.
 
-**Search (search.py) :**
-Allows users to search for documents based on a text query. It supports both text-based (SQL) search and embedding-based (FAISS) search to provide comprehensive search results.
