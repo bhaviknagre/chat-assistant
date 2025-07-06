@@ -89,7 +89,7 @@ User
 
 ## 3.5 Demo
 
-![Image](screenshots/interface.png)
+![Image](screenshots/Interface.png)
 
 
 
