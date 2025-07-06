@@ -5,7 +5,17 @@
 
 ## 1. Project Overview
 
-**Legal RAG Assistant** is a Retrieval-Augmented Generation (RAG) system designed for legal professionals. It enables users to upload legal documents (PDF, DOCX, TXT), index them with vector embeddings, and interact with a chatbot that answers questions using only the indexed content. The system leverages OpenAI for embeddings and LLM responses, ChromaDB for vector storage, and Streamlit for the user interface.
+**Legal RAG Assistant**  is a Retrieval-Augmented Generation (RAG) system designed for legal professionals. It allows:
+
+- Uploading documents and images (PDF, DOCX, TXT, PNG, JPG)
+
+- Extracting content and embedding via OpenAI
+
+- Storing in a vector DB (Chroma)
+
+- Asking legal questions through a chatbot UI (Streamlit)
+
+- Getting answers based only on uploaded documents 
 
 ---
 
@@ -77,6 +87,11 @@ User
 
 ---
 
+## 5. Screenshot Logging
+
+screenshots/answer_YYYYMMDD_HHMMSS.png
+
+
 ## 4. Setup & Configuration
 
 ### 4.1 Prerequisites
@@ -108,20 +123,22 @@ User
 │   ├── augmentation.py
 │   ├── generation.py
 │   ├── retriever.py
-│   └── ...
 ├── utils/
 │   ├── document_loader.py
 │   ├── chunks.py
 │   ├── embedding_generator.py
 │   ├── store_house.py
 │   ├── pipeline.py
+│   ├── photo_ocr.py      <
 │   └── logger.py
 ├── uploads/
 ├── chroma_store/
 ├── logs/
+├── screenshots/          
 ├── requirements.txt
 ├── .env
 └── DOCUMENTATION.md
+
 ```
 
 ---
