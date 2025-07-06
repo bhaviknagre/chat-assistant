@@ -93,7 +93,7 @@ User
 - Uploadation
 ![Image](screenshots/uploadation.png)
 - Extraction
-![Image](screenshots/Extraction and chunking process.png)
+![Image](screenshots/Extraction_and_chunking_process.png)
 - chatbot interface
 ![Image](screenshots/chatbot_interface.png)
 - chatbotoutput
