@@ -1,8 +1,0 @@
-faiss-cpu==1.7.2
-openai==0.27.0
-tqdm==4.64.1
-numpy==1.23.5
-python-dotenv==0.19.2
-streamlit==1.17.0       # Specify the version for Streamlit
-pymupdf==1.19.6         # Specify the version for PyMuPDF
-python-docx==0.8.11     # Specify the version for python-docx

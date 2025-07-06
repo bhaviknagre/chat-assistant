@@ -1,17 +1,28 @@
-# Ignore Python cache
+# Python cache and compiled files
 __pycache__/
 *.pyc
 
-# Ignore virtual environments
+# Virtual environments
 venv/
+myenv/
 .env
 
-# Ignore database and index
-chat_assistant/data/*.db
-chat_assistant/data/*.index
+# Database and index files
+chroma_store/
+*.db
+*.sqlite3
 
-# Ignore uploads
-chat_assistant/data/files/
+# Uploaded files
+uploads/
 
-# Ignore temporary files
+# Log files
+logs/
+*.log
+
+# Temporary files
 temp/
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db

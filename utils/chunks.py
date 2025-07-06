@@ -1,30 +1,45 @@
-import re 
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.docstore.document import Document
+from typing import List 
+from utils.document_loader import load_document
 from utils.logger import logger
+import tiktoken
 
 
-def split_text(text, chunk_size=500, overlap=50):
-    
-    if not isinstance(text, str):
-        raise ValueError("Input text must be a string")
-
-    logger.info("[Text Chunking] Splitting text into chunks...")
+def tiktoken_len(text: str) -> int:
+    tokenizer = tiktoken.get_encoding("cl100k_base")
+    return len(tokenizer.encode(text))
 
 
-    words = re.findall(r'\S+', text)
-    total_words = len(words)
+def split_loaded_document(file_path: str, chunk_size: int = 500, overlap: int = 50) -> List[Document]:
+    documents = load_document(file_path)
 
-    chunks = []
-    start = 0
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=overlap,
+        separators=["\n\n", "\n", ".", " ", ""],  
+        length_function=tiktoken_len
+    )
 
-    while start < total_words:
-        end = min(start + chunk_size, total_words)
-        chunk = ' '.join(words[start:end])
-        chunks.append(chunk)
+    all_chunks = []
 
-        
-        start += chunk_size - overlap
+    for doc in documents:
+        if not doc.page_content.strip():
+            continue  
 
-    logger.info(f"[Text Chunking] Split into {len(chunks)} chunks.")
-    return chunks
+        text_chunks = splitter.split_text(doc.page_content)
+        logger.info(f"[Chunking] File: {doc.metadata.get('source', 'unknown')} → {len(text_chunks)} chunks")
 
+        for i, chunk in enumerate(text_chunks):
+            chunk_doc = Document(
+                page_content=chunk,
+                metadata={
+                    **doc.metadata,
+                    "chunk": i + 1,
+                    "total_chunks": len(text_chunks)
+                }
+            )
+            all_chunks.append(chunk_doc)
 
+    logger.info(f"[Chunking] Split {len(documents)} documents into {len(all_chunks)} chunks total")
+    return all_chunks

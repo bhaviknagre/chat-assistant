@@ -1,12 +1,12 @@
-2025-05-02 18:58:35,442 - chat_assistant - INFO - [PDF Extraction] Successfully extracted text from chat_assistant/data/files\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
-2025-05-02 19:04:32,327 - faiss.loader - INFO - Loading faiss with AVX2 support.
-2025-05-02 19:04:32,353 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
-2025-05-02 19:04:32,360 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
-2025-05-02 19:04:45,593 - chat_assistant - INFO - [PDF Extraction] Successfully extracted text from chat_assistant/data/files\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
-2025-05-02 19:04:45,594 - chat_assistant - INFO - [Text Chunking] Splitting text into chunks...
-2025-05-02 19:04:45,595 - chat_assistant - INFO - [Text Chunking] Split into 2 chunks.
-2025-05-02 19:04:45,606 - chat_assistant - INFO - [FAISS] Created new FAISS index
-2025-05-02 19:04:45,606 - chat_assistant - ERROR - [Embedding] Failed to embed text chunk: 
+2025-06-24 22:24:54,213 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\2.pdf
+2025-06-24 22:25:01,444 - chat_assistant - INFO - [PDF] Extracted 43 pages from uploads\2.pdf
+2025-06-24 22:25:07,003 - chat_assistant - INFO - [PDF] Extracted 43 pages from uploads\2.pdf
+2025-06-24 22:25:07,004 - chat_assistant - INFO - [Pipeline] Loaded 43 document(s).
+2025-06-24 22:25:16,264 - chat_assistant - INFO - [PDF] Extracted 43 pages from uploads\2.pdf
+2025-06-24 22:25:28,754 - chat_assistant - INFO - [Chunking] Split 43 documents into 81 chunks total
+2025-06-24 22:25:28,755 - chat_assistant - INFO - [Pipeline] Document chunking complete. 81 chunks created.
+2025-06-24 22:25:28,755 - chat_assistant - INFO - [Embedding] Embedding 81 chunks in batches of 10...
+2025-06-24 22:25:28,780 - chat_assistant - ERROR - [Embedding] Error on batch 0-10: 
 
 You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
 
@@ -16,7 +16,7 @@ Alternatively, you can pin your installation to the old version, e.g. `pip insta
 
 A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
 
-2025-05-02 19:04:45,606 - chat_assistant - ERROR - [Embedding] Failed to embed text chunk: 
+2025-06-24 22:25:30,782 - chat_assistant - ERROR - [Embedding] Error on batch 10-20: 
 
 You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
 
@@ -26,3 +26,205 @@ Alternatively, you can pin your installation to the old version, e.g. `pip insta
 
 A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
 
+2025-06-24 22:25:32,783 - chat_assistant - ERROR - [Embedding] Error on batch 20-30: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-24 22:25:34,784 - chat_assistant - ERROR - [Embedding] Error on batch 30-40: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-24 22:25:36,785 - chat_assistant - ERROR - [Embedding] Error on batch 40-50: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-24 22:25:38,786 - chat_assistant - ERROR - [Embedding] Error on batch 50-60: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-24 22:25:40,787 - chat_assistant - ERROR - [Embedding] Error on batch 60-70: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-24 22:25:42,788 - chat_assistant - ERROR - [Embedding] Error on batch 70-80: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-24 22:25:44,790 - chat_assistant - ERROR - [Embedding] Error on batch 80-90: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-24 22:25:46,791 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 0
+2025-06-24 22:25:46,791 - chat_assistant - INFO - [Pipeline] Embedding complete. 0 embeddings generated.
+2025-06-24 22:25:46,792 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\2.pdf
+2025-06-24 22:25:46,839 - chat_assistant - ERROR - [Chroma Store] Failed to store document: Expected Embeddings to be non-empty list or numpy array, got [] in add.
+2025-06-24 22:25:46,839 - chat_assistant - ERROR - [Pipeline] Storing failed: Expected Embeddings to be non-empty list or numpy array, got [] in add.
+2025-06-24 22:25:56,296 - chat_assistant - INFO - [PDF] Extracted 43 pages from uploads\2.pdf
+2025-06-24 22:26:02,189 - chat_assistant - INFO - [PDF] Extracted 43 pages from uploads\2.pdf
+2025-06-24 22:26:03,581 - chat_assistant - INFO - [Chunking] Split 43 documents into 81 chunks total
+2025-06-25 10:48:44,435 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:48:44,786 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:48:45,107 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:49:59,255 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:49:59,646 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:49:59,646 - chat_assistant - INFO - [Pipeline] Loaded 5 document(s).
+2025-06-25 10:49:59,926 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:49:59,969 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:49:59,969 - chat_assistant - INFO - [Pipeline] Document chunking complete. 5 chunks created.
+2025-06-25 10:49:59,970 - chat_assistant - INFO - [Embedding] Embedding 5 chunks in batches of 10...
+2025-06-25 10:50:05,238 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 5
+2025-06-25 10:50:05,238 - chat_assistant - INFO - [Pipeline] Embedding complete. 5 embeddings generated.
+2025-06-25 10:50:05,238 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:50:05,382 - chat_assistant - ERROR - [Chroma Store] Failed to store document: 'Client' object has no attribute 'persist'
+2025-06-25 10:50:05,382 - chat_assistant - ERROR - [Pipeline] Storing failed: 'Client' object has no attribute 'persist'
+2025-06-25 10:50:05,816 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:50:06,201 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:50:06,233 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:53:09,158 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:09,558 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:09,607 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:53:10,549 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:10,873 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:10,873 - chat_assistant - INFO - [Pipeline] Loaded 5 document(s).
+2025-06-25 10:53:11,163 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:11,190 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:53:11,190 - chat_assistant - INFO - [Pipeline] Document chunking complete. 5 chunks created.
+2025-06-25 10:53:11,190 - chat_assistant - INFO - [Embedding] Embedding 5 chunks in batches of 10...
+2025-06-25 10:53:12,926 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 5
+2025-06-25 10:53:12,926 - chat_assistant - INFO - [Pipeline] Embedding complete. 5 embeddings generated.
+2025-06-25 10:53:12,926 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:13,205 - chat_assistant - ERROR - [Chroma Store] Failed to store document: 'Client' object has no attribute 'persist'
+2025-06-25 10:53:13,205 - chat_assistant - ERROR - [Pipeline] Storing failed: 'Client' object has no attribute 'persist'
+2025-06-25 10:53:13,655 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:14,004 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:53:14,032 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:55:55,379 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:55,785 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:55,798 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:56,163 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:56,163 - chat_assistant - INFO - [Pipeline] Loaded 5 document(s).
+2025-06-25 10:55:56,529 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:56,537 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:55:56,810 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 10:55:56,810 - chat_assistant - INFO - [Pipeline] Document chunking complete. 5 chunks created.
+2025-06-25 10:55:56,810 - chat_assistant - INFO - [Embedding] Embedding 5 chunks in batches of 10...
+2025-06-25 10:55:58,760 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 5
+2025-06-25 10:55:58,761 - chat_assistant - INFO - [Pipeline] Embedding complete. 5 embeddings generated.
+2025-06-25 10:55:58,761 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:58,844 - chat_assistant - INFO - [Chroma Store] Stored 5 items in collection 'legal_documents'
+2025-06-25 10:55:58,844 - chat_assistant - INFO - [Pipeline] Document stored successfully.
+2025-06-25 10:55:58,844 - chat_assistant - INFO - [Pipeline] Pipeline execution finished.
+
+2025-06-25 10:55:59,210 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:59,556 - chat_assistant - INFO - [PDF] Extracted 5 pages from uploads\2160_2024_16_1502_59234_Judgement_07-Feb-2025.pdf
+2025-06-25 10:55:59,582 - chat_assistant - INFO - [Chunking] Split 5 documents into 5 chunks total
+2025-06-25 11:36:08,167 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\bhavik_resume.pdf
+2025-06-25 11:36:08,405 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-25 11:36:08,405 - chat_assistant - INFO - [Pipeline] Loaded 1 document(s).
+2025-06-25 11:36:08,594 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-25 11:36:08,932 - chat_assistant - INFO - [Chunking] Split 1 documents into 2 chunks total
+2025-06-25 11:36:08,932 - chat_assistant - INFO - [Pipeline] Document chunking complete. 2 chunks created.
+2025-06-25 11:36:08,932 - chat_assistant - INFO - [Embedding] Embedding 2 chunks in batches of 10...
+2025-06-25 11:36:13,892 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 2
+2025-06-25 11:36:13,893 - chat_assistant - INFO - [Pipeline] Embedding complete. 2 embeddings generated.
+2025-06-25 11:36:13,893 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\bhavik_resume.pdf
+2025-06-25 11:36:14,118 - chat_assistant - INFO - [Chroma Store] Stored 2 items in collection 'legal_documents'
+2025-06-25 11:36:14,118 - chat_assistant - INFO - [Pipeline] Document stored successfully.
+2025-06-25 11:36:14,119 - chat_assistant - INFO - [Pipeline] Pipeline execution finished.
+
+2025-06-25 11:36:14,306 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-25 11:36:14,522 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-25 11:36:14,529 - chat_assistant - INFO - [Chunking] Split 1 documents into 2 chunks total
+2025-06-27 13:01:16,448 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\bhavik_resume.pdf
+2025-06-27 13:01:16,690 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-27 13:01:16,691 - chat_assistant - INFO - [Pipeline] Loaded 1 document(s).
+2025-06-27 13:01:16,861 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-27 13:01:17,252 - chat_assistant - INFO - [Chunking] Split 1 documents into 2 chunks total
+2025-06-27 13:01:17,252 - chat_assistant - INFO - [Pipeline] Document chunking complete. 2 chunks created.
+2025-06-27 13:01:17,252 - chat_assistant - INFO - [Embedding] Embedding 2 chunks in batches of 10...
+2025-06-27 13:01:19,782 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 2
+2025-06-27 13:01:19,782 - chat_assistant - INFO - [Pipeline] Embedding complete. 2 embeddings generated.
+2025-06-27 13:01:19,782 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\bhavik_resume.pdf
+2025-06-27 13:01:20,294 - chat_assistant - INFO - [Chroma Store] Stored 2 items in collection 'legal_documents'
+2025-06-27 13:01:20,294 - chat_assistant - INFO - [Pipeline] Document stored successfully.
+2025-06-27 13:01:20,296 - chat_assistant - INFO - [Pipeline] Pipeline execution finished.
+
+2025-06-27 13:01:20,597 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-27 13:01:20,865 - chat_assistant - INFO - [PDF] Extracted 1 pages from uploads\bhavik_resume.pdf
+2025-06-27 13:01:20,875 - chat_assistant - INFO - [Chunking] Split 1 documents into 2 chunks total
+2025-07-06 10:22:37,966 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\Spiral_Report_Formatted_final.pdf
+2025-07-06 10:22:39,611 - chat_assistant - INFO - [PDF] Extracted 25 pages from uploads\Spiral_Report_Formatted_final.pdf
+2025-07-06 10:22:39,611 - chat_assistant - INFO - [Pipeline] Loaded 25 document(s).
+2025-07-06 10:22:41,048 - chat_assistant - INFO - [PDF] Extracted 25 pages from uploads\Spiral_Report_Formatted_final.pdf
+2025-07-06 10:22:54,345 - chat_assistant - INFO - [Chunking] Split 25 documents into 25 chunks total
+2025-07-06 10:22:54,345 - chat_assistant - INFO - [Pipeline] Document chunking complete. 25 chunks created.
+2025-07-06 10:22:54,345 - chat_assistant - INFO - [Embedding] Embedding 25 chunks in batches of 10...
+2025-07-06 10:23:00,152 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 25
+2025-07-06 10:23:00,152 - chat_assistant - INFO - [Pipeline] Embedding complete. 25 embeddings generated.
+2025-07-06 10:23:00,152 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\Spiral_Report_Formatted_final.pdf
+2025-07-06 10:23:00,450 - chat_assistant - INFO - [Chroma Store] Stored 25 items in collection 'legal_documents'
+2025-07-06 10:23:00,451 - chat_assistant - INFO - [Pipeline] Document stored successfully.
+2025-07-06 10:23:00,452 - chat_assistant - INFO - [Pipeline] Pipeline execution finished.
+
+2025-07-06 10:23:02,117 - chat_assistant - INFO - [PDF] Extracted 25 pages from uploads\Spiral_Report_Formatted_final.pdf
+2025-07-06 10:23:03,684 - chat_assistant - INFO - [PDF] Extracted 25 pages from uploads\Spiral_Report_Formatted_final.pdf
+2025-07-06 10:23:03,774 - chat_assistant - INFO - [Chunking] Split 25 documents into 25 chunks total
+2025-07-06 10:26:51,979 - chat_assistant - INFO - [Pipeline] Starting pipeline for file: uploads\GenAI_Roadmap_Beginners.docx
+2025-07-06 10:26:52,032 - chat_assistant - INFO - [DOCX Loader] Loaded DOCX with 527 words from uploads\GenAI_Roadmap_Beginners.docx
+2025-07-06 10:26:52,032 - chat_assistant - INFO - [Pipeline] Loaded 1 document(s).
+2025-07-06 10:26:52,060 - chat_assistant - INFO - [DOCX Loader] Loaded DOCX with 527 words from uploads\GenAI_Roadmap_Beginners.docx
+2025-07-06 10:26:52,294 - chat_assistant - INFO - [Chunking] Split 1 documents into 3 chunks total
+2025-07-06 10:26:52,294 - chat_assistant - INFO - [Pipeline] Document chunking complete. 3 chunks created.
+2025-07-06 10:26:52,294 - chat_assistant - INFO - [Embedding] Embedding 3 chunks in batches of 10...
+2025-07-06 10:26:53,333 - chat_assistant - INFO - [Embedding] Completed. Total embeddings: 3
+2025-07-06 10:26:53,333 - chat_assistant - INFO - [Pipeline] Embedding complete. 3 embeddings generated.
+2025-07-06 10:26:53,333 - chat_assistant - INFO - [Chroma Store] Storing document from: uploads\GenAI_Roadmap_Beginners.docx
+2025-07-06 10:26:53,582 - chat_assistant - INFO - [Chroma Store] Stored 3 items in collection 'legal_documents'
+2025-07-06 10:26:53,582 - chat_assistant - INFO - [Pipeline] Document stored successfully.
+2025-07-06 10:26:53,583 - chat_assistant - INFO - [Pipeline] Pipeline execution finished.
+
+2025-07-06 10:26:53,627 - chat_assistant - INFO - [DOCX Loader] Loaded DOCX with 527 words from uploads\GenAI_Roadmap_Beginners.docx
+2025-07-06 10:26:53,658 - chat_assistant - INFO - [DOCX Loader] Loaded DOCX with 527 words from uploads\GenAI_Roadmap_Beginners.docx
+2025-07-06 10:26:53,669 - chat_assistant - INFO - [Chunking] Split 1 documents into 3 chunks total
