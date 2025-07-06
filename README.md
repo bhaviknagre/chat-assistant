@@ -87,9 +87,9 @@ User
 
 ---
 
-## 5. Screenshot Logging
+## 3.5 Screenshot Logging
 
-screenshots/answer_YYYYMMDD_HHMMSS.png
+screenshots/interface.png
 
 
 ## 4. Setup & Configuration
