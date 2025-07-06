@@ -88,9 +88,16 @@ User
 ---
 
 ## 3.5 Demo
-
+- Interface 
 ![Image](screenshots/Interface.png)
-
+- Uploadation
+![Image](screenshots/uploadation.png)
+- Extraction
+![Image](screenshots/Extraction and chunking process.png)
+- chatbot interface
+![Image](screenshots/chatbot_interface.png)
+- chatbotoutput
+![Image](screenshots/chatbot_output.png)
 
 
 ## 4. Setup & Configuration
