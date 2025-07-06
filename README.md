@@ -87,9 +87,10 @@ User
 
 ---
 
-## 3.5 Screenshot Logging
+## 3.5 Demo
 
-screenshots/interface.png
+![Image](screenshots/interface.png)
+
 
 
 ## 4. Setup & Configuration
