@@ -262,5 +262,3 @@ Handles the storage of documents, metadata, embeddings, and chunked text in the 
 
 **Pipeline (pipeline.py) :**
 This is the orchestrator, managing the entire flow of the application from document extraction to embedding and storage. It ensures that the process is executed in a streamlined manner.
-
->>>>>>> 78da8544f2b9893ad8480257c3fe3d8c56a6bc7b
